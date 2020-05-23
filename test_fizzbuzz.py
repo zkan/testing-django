@@ -9,19 +9,23 @@ import unittest
 class TestFizzBuzz(unittest.TestCase):
     def test_get_one_when_input_is_one(self):
         result = fizzbuzz(1)
-        self.assertEqual(result, 1)
+        # self.assertEqual(result, 1)
+        assert result == 1
 
     def test_get_four_when_input_is_four(self):
         result = fizzbuzz(4)
-        self.assertEqual(result, 4)
+        # self.assertEqual(result, 4)
+        assert result == 4
 
     def test_get_fizz_when_input_is_three(self):
         result = fizzbuzz(3)
-        self.assertEqual(result, 'fizz')
+        # self.assertEqual(result, 'fizz')
+        assert result == 'fizz'
 
     def test_get_fizz_when_input_is_six(self):
         result = fizzbuzz(6)
-        self.assertEqual(result, 'fizz')
+        # self.assertEqual(result, 'fizz')
+        assert result == 'fizz'
 
 
 def fizzbuzz(number):
@@ -29,6 +33,3 @@ def fizzbuzz(number):
         return 'fizz'
 
     return number
-
-
-unittest.main()
