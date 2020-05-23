@@ -1,4 +1,5 @@
 from django.test import TestCase
+from django.urls import reverse
 
 from ..models import Category
 
@@ -10,7 +11,7 @@ class TestCategoryList(TestCase):
     Category.objects.create(name='Elite')
 
     # When
-    response = self.client.get('/categories/')
+    response = self.client.get(reverse('category_list'))
 
     # Then
     self.assertContains(response, '<li>Street Food</li>')
