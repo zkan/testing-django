@@ -15,8 +15,19 @@ class TestFizzBuzz(unittest.TestCase):
         result = fizzbuzz(4)
         self.assertEqual(result, 4)
 
+    def test_get_fizz_when_input_is_three(self):
+        result = fizzbuzz(3)
+        self.assertEqual(result, 'fizz')
+
+    def test_get_fizz_when_input_is_six(self):
+        result = fizzbuzz(6)
+        self.assertEqual(result, 'fizz')
+
 
 def fizzbuzz(number):
+    if number % 3 == 0:
+        return 'fizz'
+
     return number
 
 
