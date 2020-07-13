@@ -1,5 +1,4 @@
 import os
-
 from unittest.mock import MagicMock
 
 from django.core.files import File
@@ -22,4 +21,4 @@ class TestCategory(TestCase):
         self.assertEqual(category.name, name)
         self.assertEqual(category.photo.name, photo_mock.name)
 
-        os.remove('media/test.png')
+        os.remove(f'media/{photo_mock.name}')
