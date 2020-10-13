@@ -1,0 +1,1 @@
+[{"model": "categories.category", "pk": 1, "fields": {"name": "Street", "photo": "logo-android.png"}}, {"model": "categories.category", "pk": 2, "fields": {"name": "Italian", "photo": "logo-kotlin.png"}}]
