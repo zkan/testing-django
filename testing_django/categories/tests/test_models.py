@@ -8,7 +8,7 @@ from ..models import Category
 
 
 class TestCategory(TestCase):
-    fixtures = ['fixtures/categories',]
+    fixtures = ['categories',]
 
     def test_catgory_should_have_defined_fields(self):
         # Given
